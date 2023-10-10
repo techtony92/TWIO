@@ -1,0 +1,8 @@
+/node_modules
+/.yarn
+/.next
+coverage/
+dist/
+.env
+.DS_Store
+.vscode/

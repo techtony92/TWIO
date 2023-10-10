@@ -1,0 +1,16 @@
+{
+    "extends": ["next/core-web-vitals",
+    "eslint:recommend",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"],
+    "plugins": ["react", "import", "jsx-a11y"],
+    "env": {"es2020": true},
+    "settings": {
+        "react": {
+          "version": "detect"
+        }
+    }
+}
