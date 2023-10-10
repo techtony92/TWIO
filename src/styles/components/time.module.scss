@@ -1,0 +1,11 @@
+@function gray($color) {
+  @return rgb($color, $color, $color);
+}
+
+.time {
+  color: gray(245);
+  font-size: 6em;
+  height: 80px;
+  line-height: 80px;
+  text-shadow: 2px 2px 2px rgba(black, 0.1);
+}
