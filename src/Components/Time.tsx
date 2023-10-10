@@ -1,4 +1,5 @@
 import useCurrentDateEffect from "../hooks/useCurrentDateEffect";
+import styles from "../styles/components/time.module.scss";
 type TimeUtility = {
   format: (date: Date) => string;
   formatHours: (hours: number) => string;
@@ -7,7 +8,7 @@ type TimeUtility = {
 
 const TimeFormat: TimeUtility = {
   formatHours: (hours: number): string => {
-    return hours % 12 === 0 ? `12` : `{hours % 12}`;
+    return hours % 12 === 0 ? `12` : `${hours % 12}`;
   },
   formatSegment: (segment: number): string => {
     return segment < 10 ? `0${segment}` : `${segment}`;
@@ -24,7 +25,7 @@ const TimeFormat: TimeUtility = {
 function DigitalClock() {
   const date: Date = useCurrentDateEffect();
 
-  return <span className="time">{TimeFormat.format(date)}</span>;
+  return <span className={styles.time}>{TimeFormat.format(date)}</span>;
 }
 
 export default DigitalClock;
