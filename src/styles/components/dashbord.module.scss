@@ -1,0 +1,36 @@
+@import "../base/variables.module.scss";
+.dash {
+  width: 130rem;
+  height: 230rem;
+  margin: 10rem 30rem;
+  border-radius: 3.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(62, 59, 59, 0.088);
+  box-shadow: 0rem 0.7rem 1.4rem 0rem #201c1c, -0.7rem -0.7rem 1.4rem #2e2929;
+  backdrop-filter: blur(1.5rem);
+
+  .text {
+    font-size: 5rem;
+    margin: 40rem 0rem 0rem 40rem;
+    color: #e7efdd;
+    overflow: hidden;
+    margin-top: 10rem;
+
+    font-family: "Libre Baskerville", serif;
+    font-size: 60px;
+    color: #4f5664;
+    line-height: 76px;
+    text-align: center;
+    overflow: hidden;
+    height: 10vh;
+  }
+
+  .box {
+    width: 300px;
+    height: 400px;
+    border: 2px solid rgb(80, 90, 61);
+    border-radius: 5rem;
+    background: skyblue;
+    margin-bottom: 20rem;
+  }
+}
