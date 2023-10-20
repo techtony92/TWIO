@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "eslint-config-next": "latest",
+    "gsap-trial": "^3.12.2",
     "next": "13.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"

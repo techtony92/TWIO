@@ -1890,6 +1890,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gsap-trial@npm:^3.12.2":
+  version: 3.12.2
+  resolution: "gsap-trial@npm:3.12.2"
+  checksum: 27435970deee2088fe264ce46e17b67a632187aa70b35bc4ab14f5fab504988cfa21bded148537e17b6b06d087f75eb6a9043e82e27cd46464fbb075b8ab5af6
+  languageName: node
+  linkType: hard
+
 "has-bigints@npm:^1.0.1, has-bigints@npm:^1.0.2":
   version: 1.0.2
   resolution: "has-bigints@npm:1.0.2"
@@ -3254,6 +3261,7 @@ __metadata:
     eslint-config-prettier: 8.5.0
     eslint-plugin-react-hooks: 4.6.0
     eslint-plugin-react-refresh: 0.4.3
+    gsap-trial: ^3.12.2
     next: 13.4
     prettier: 2.7.1
     react: 18.2.0
