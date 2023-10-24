@@ -2,11 +2,12 @@
 import { useEffect, useLayoutEffect, useRef, useReducer } from "react";
 import DigitalClock from "../src/Components/Time";
 import styles from "../src/styles/components/dashbord.module.scss";
+import headerStyles from "../src/styles/layout/header.module.scss";
 import { gsap } from "gsap-trial";
 import { GSDevTools } from "gsap-trial/all";
 import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
 import { SplitText } from "gsap-trial/SplitText";
-import { arrayToObject } from "../src/util/ConvertionUtility";
+import { arrayToObject } from "../src/util/ConversionUtility";
 import useFetch from "../src/hooks/useFetch";
 type SplitTextElement = HTMLHeadingElement & {
   split: any;
@@ -14,7 +15,7 @@ type SplitTextElement = HTMLHeadingElement & {
 };
 gsap.registerPlugin(SplitText, ScrollTrigger);
 export default function Page() {
-  const root = useRef(null);
+  const dashRoot = useRef(null);
   const textRef = useRef(null);
   const boxRef = useRef(null);
 
@@ -63,16 +64,17 @@ export default function Page() {
         y: 100,
         stagger: 0.04,
       });
-    }, root);
+    }, dashRoot);
     return () => {
       animationContext.revert();
     };
   }, []);
   return (
     <>
-      <h1>Hello, Next.js!</h1>
+      <header id="welcome" className={headerStyles.welcome}></header>
       <DigitalClock />
-      <div ref={root} className={`${styles.dash} dash`}>
+      <div className={headerStyles.welcome__main}>
+        <div ref={dashRoot} className={`${styles.dashRoot} dashRoot`}></div>
         <div ref={boxRef} className={styles.box}></div>
         <h1 ref={textRef} className={styles.text}>
           Here is some text &nbsp; made visible.

@@ -1,0 +1,22 @@
+.welcome {
+  background: #202736;
+  background: linear-gradient(to bottom, #181d23 0%, #202736 80%);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  margin: 0 auto;
+  z-index: 1;
+
+  &__main {
+    border: 1px dashed green;
+  }
+}
+.welcome::before {
+  content: "";
+  position: fixed;
+  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Stars.svg?sanitize=true);
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+}
