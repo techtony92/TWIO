@@ -1,5 +1,5 @@
 @import "../base/variables.module.scss";
-.dash {
+.dashRoot {
   width: 130rem;
   height: 230rem;
   margin: 10rem 30rem;
@@ -7,6 +7,7 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(62, 59, 59, 0.088);
   box-shadow: 0rem 0.7rem 1.4rem 0rem #201c1c, -0.7rem -0.7rem 1.4rem #2e2929;
+
   backdrop-filter: blur(1.5rem);
 
   .text {
